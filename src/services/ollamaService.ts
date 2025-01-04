@@ -1,8 +1,9 @@
+// OllamaService.ts
 import axios from "axios";
 import { Question, QuizResponse, GenerateOptions } from "../types";
 import { JsonParser } from "../utils/jsonParser";
 import { FileSystemManager } from "../utils/fileSystem";
-import { PromptGenerator } from "./promptGenerator";
+import { PromptGenerator } from "../services/promptGenerator";
 
 export class OllamaService {
   private fileSystem: FileSystemManager;
@@ -31,9 +32,9 @@ export class OllamaService {
       const response = await this.makeOllamaRequest(prompt);
       console.log("Received response from Ollama");
 
-      let questions = await this.processResponse(response.data.response);
+      const questions = await this.processResponse(response.data.response);
 
-      if (saveToFile) {
+      if (saveToFile && questions) {
         const filePath = await this.fileSystem.saveToJson(
           questions,
           filename,
@@ -42,10 +43,14 @@ export class OllamaService {
         return { questions, filePath };
       }
 
+      if (!questions || questions.length < OllamaService.REQUIRED_QUESTIONS) {
+        throw new Error("Failed to generate required number of questions");
+      }
+
       return { questions };
     } catch (error: any) {
       console.error("Ollama request failed:", error.message);
-      throw new Error(`Failed to generate questions: ${error.message}`);
+      throw error;
     }
   }
 
@@ -64,22 +69,18 @@ export class OllamaService {
     });
   }
 
-  private async processResponse(result: string): Promise<Question[]> {
+  private async processResponse(result: string): Promise<Question[] | null> {
     let questions: Question[] | null = null;
 
     const jsonContent = JsonParser.extractJSON(result);
     if (jsonContent) {
       questions = JsonParser.validateAndTransformQuestions(jsonContent);
+      if (questions && questions.length >= OllamaService.REQUIRED_QUESTIONS) {
+        return questions;
+      }
     }
 
-    if (!questions || questions.length < OllamaService.REQUIRED_QUESTIONS) {
-      questions = await this.reformatQuestions(
-        result,
-        OllamaService.REQUIRED_QUESTIONS
-      );
-    }
-
-    return questions;
+    return this.reformatQuestions(result, OllamaService.REQUIRED_QUESTIONS);
   }
 
   private async reformatQuestions(

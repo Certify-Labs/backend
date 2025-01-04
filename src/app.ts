@@ -3,10 +3,14 @@ import dotenv from "dotenv";
 import tweetsRoutes from "./routes/tweets";
 import transcriptRouter from "./routes/transcripts";
 import questionRouter from "./routes/questions";
+import cors from "cors";
 
 dotenv.config();
 
 const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
 app.use(express.json());
 
 // Register routes

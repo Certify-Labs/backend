@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-04T19:39:27.158Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "What is the first step to install Flutter on a computer?",
+      "options": [
+        "A) 1. Clone the Flutter repository from GitHub.",
+        "B) 2. Open the cloned repository in the terminal or command prompt.",
+        "C) 3. Run the `flutter doctor` command to check for any issues with the installation.",
+        "D) 4. Verify that Flutter is installed correctly by running `flutter doctor` again."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What should you do on Windows to allow correct usage of Flutter outside of the terminal or command prompt?",
+      "options": [
+        "A) 1. Update your operating system.",
+        "B) 2. Install a code editor.",
+        "C) 3. Update your environment variables.",
+        "D) 4. Change your browser settings."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the purpose of running `flutter doctor`?",
+      "options": [
+        "A) 1. To verify that Flutter is installed correctly.",
+        "B) 2. To check for any issues with the installation.",
+        "C) 3. To update the environment variables.",
+        "D) 4. To access and clone the course files from GitHub."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What should you do to access and clone the course files from GitHub?",
+      "options": [
+        "A) 1. Run `flutter doctor` to check for any issues.",
+        "B) 2. Clone the Flutter repository from GitHub.",
+        "C) 3. Open the cloned repository in the terminal or command prompt.",
+        "D) 4. Verify that Flutter is installed correctly."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is a best practice when working with web development?",
+      "options": [
+        "A) 1. Use only one programming language.",
+        "B) 2. Write code without commenting or documentation.",
+        "C) 3. Follow the single responsibility principle.",
+        "D) 4. Ignore security protocols and best practices."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What should you do to ensure secure coding?",
+      "options": [
+        "A) 1. Use only HTTPS connections.",
+        "B) 2. Validate all user input.",
+        "C) 3. Follow the principle of least privilege.",
+        "D) 4. Ignore security protocols and best practices."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is a key aspect of responsive web design?",
+      "options": [
+        "A) 1. Using only fixed-width layouts.",
+        "B) 2. Ignoring screen size and device type.",
+        "C) 3. Following the mobile-first approach.",
+        "D) 4. Using only absolute positioning."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What should you do to ensure accessibility in web development?",
+      "options": [
+        "A) 1. Ignore accessibility protocols and best practices.",
+        "B) 2. Use only dark mode for all users.",
+        "C) 3. Follow the Web Content Accessibility Guidelines (WCAG).",
+        "D) 4. Use only ARIA attributes."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is a common mistake when working with web development?",
+      "options": [
+        "A) 1. Not testing for cross-browser compatibility.",
+        "B) 2. Ignoring security protocols and best practices.",
+        "C) 3. Using only one programming language.",
+        "D) 4. Writing code without commenting or documentation."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What should you do to improve your coding skills?",
+      "options": [
+        "A) 1. Practice coding every day.",
+        "B) 2. Ignore feedback and criticism.",
+        "C) 3. Learn from others' code and experiences.",
+        "D) 4. Use only one programming language."
+      ],
+      "answer": "D"
+    }
+  ]
+}

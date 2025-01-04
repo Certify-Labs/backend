@@ -15,12 +15,14 @@
     "@types/node": "^22.10.5",
     "agent-twitter-client": "^0.0.18",
     "axios": "^1.7.9",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.21.2",
     "ollama-node": "^0.1.28",
     "youtube-transcript": "^1.2.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.15",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
