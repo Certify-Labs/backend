@@ -12,9 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^22.10.5",
     "agent-twitter-client": "^0.0.18",
+    "axios": "^1.7.9",
     "dotenv": "^16.0.3",
     "express": "^4.21.2",
+    "ollama-node": "^0.1.28",
     "youtube-transcript": "^1.2.1"
   },
   "devDependencies": {
