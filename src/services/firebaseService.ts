@@ -7,6 +7,8 @@ import {
   where,
   getDocs,
   Timestamp,
+  doc,
+  getDoc,
 } from "firebase/firestore";
 
 export interface QuestionSet {
@@ -16,6 +18,24 @@ export interface QuestionSet {
   videoData: any[];
   createdAt: Timestamp;
   courseId: number;
+}
+
+export interface Course {
+  id: string;
+  title: string;
+  category: string;
+  rating: number;
+  students: number;
+  progress: number;
+  colorScheme: {
+    darker: string;
+    lighter: string;
+  };
+  link: string;
+  icon: string;
+  purchasedBy: string[];
+  createdAt: Timestamp;
+  updatedAt: Timestamp;
 }
 
 export class FirebaseService {
@@ -80,6 +100,26 @@ export class FirebaseService {
       return questionSets;
     } catch (error) {
       console.error("Error fetching questions from Firebase:", error);
+      throw error;
+    }
+  }
+
+  async getCourseDetails(courseId: string): Promise<Course | null> {
+    try {
+      const courseRef = doc(this.db, "courses", courseId.toString());
+      const courseSnap = await getDoc(courseRef);
+
+      if (!courseSnap.exists()) {
+        console.log(`No course found with ID: ${courseId}`);
+        return null;
+      }
+
+      return {
+        id: courseSnap.id,
+        ...courseSnap.data(),
+      } as Course;
+    } catch (error) {
+      console.error("Error fetching course details:", error);
       throw error;
     }
   }

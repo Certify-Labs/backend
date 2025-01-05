@@ -3,6 +3,33 @@ import { YouTubeScraper } from "../utils/youtube-scrapper";
 import { OllamaService } from "../utils/ollamaClient";
 import { FirebaseService } from "../services/firebaseService";
 import { handleResponse, handleError } from "../utils/responseHandler";
+interface CourseDetails {
+  id: string;
+  title: string;
+  category: string;
+  rating: number;
+  progress: number;
+  colorScheme: {
+    darker: string;
+    lighter: string;
+  };
+}
+
+interface QuestionSetData {
+  videoUrl: string;
+  questions: any[];
+  videoData: any;
+  createdAt: any;
+}
+
+interface GroupedQuestions {
+  courseDetails: CourseDetails | null;
+  questions: QuestionSetData[];
+}
+
+interface GroupedQuestionsAccumulator {
+  [key: string]: GroupedQuestions;
+}
 
 export class QuestionController {
   private scraper: YouTubeScraper;
@@ -101,13 +128,74 @@ export class QuestionController {
         });
       }
 
+      // Get all question sets for the user
       const questionSets = await this.firebaseService.getQuestionsByUserAddress(
         userAddress
       );
 
+      // Create a map to avoid duplicate course fetches
+      const courseDetailsMap = new Map<number, CourseDetails | null>();
+
+      // Enhanced question sets with course details
+      const enhancedQuestionSets = await Promise.all(
+        questionSets.map(async (questionSet) => {
+          // Check if we already fetched this course's details
+          if (!courseDetailsMap.has(questionSet.courseId)) {
+            const courseDetails = await this.firebaseService.getCourseDetails(
+              questionSet.courseId.toString()
+            );
+            courseDetailsMap.set(questionSet.courseId, courseDetails);
+          }
+
+          // Get course details from map
+          const courseDetails = courseDetailsMap.get(questionSet.courseId);
+
+          return {
+            ...questionSet,
+            course: courseDetails
+              ? {
+                  id: courseDetails.id,
+                  title: courseDetails.title,
+                  category: courseDetails.category,
+                  rating: courseDetails.rating,
+                  progress: courseDetails.progress,
+                  colorScheme: courseDetails.colorScheme,
+                }
+              : null,
+          };
+        })
+      );
+
+      // Group questions by courseId with proper typing
+      const groupedQuestions =
+        enhancedQuestionSets.reduce<GroupedQuestionsAccumulator>(
+          (acc, questionSet) => {
+            const courseId = questionSet.courseId.toString(); // Convert to string for object key
+            if (!acc[courseId]) {
+              acc[courseId] = {
+                courseDetails: questionSet.course,
+                questions: [],
+              };
+            }
+            acc[courseId].questions.push({
+              videoUrl: questionSet.videoUrl,
+              questions: questionSet.questions,
+              videoData: questionSet.videoData,
+              createdAt: questionSet.createdAt,
+            });
+            return acc;
+          },
+          {}
+        );
+
       return handleResponse(
         res,
-        questionSets,
+        {
+          courses: Object.entries(groupedQuestions).map(([courseId, data]) => ({
+            courseId: parseInt(courseId),
+            ...data,
+          })),
+        },
         "Questions retrieved successfully"
       );
     } catch (error) {

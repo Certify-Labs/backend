@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-05T19:29:44.132Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "What is being discussed?",
+      "options": [
+        "A) Write all HTML first",
+        "B) Style with CSS first",
+        "C) Alternate between HTML and CSS",
+        "D) No correct approach exists"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Which concept solves the problem of confidentiality?",
+      "options": [
+        "A) Symmetric Key Cryptography",
+        "B) Asymmetric Key Cryptography",
+        "C) Hashing",
+        "D) Digital Signatures"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the primary goal of encryption?",
+      "options": [
+        "A) To increase security",
+        "B) To decrease speed",
+        "C) To hide data from unauthorized parties",
+        "D) To enhance readability"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the purpose of a key in cryptography?",
+      "options": [
+        "A) To encrypt and decrypt data",
+        "B) To authenticate users",
+        "C) To verify digital signatures",
+        "D) To compress data"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Which type of network does not require a central server?",
+      "options": [
+        "A) Client-Server Network",
+        "B) Peer-to-Peer Network",
+        "C) Hybrid Network",
+        "D) Wired Network"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the primary concern when transmitting confidential data over a network?",
+      "options": [
+        "A) Authentication",
+        "B) Authorization",
+        "C) Confidentiality",
+        "D) Integrity"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "How can you ensure that only authorized parties can access encrypted data?",
+      "options": [
+        "A) Using a strong password",
+        "B) Implementing digital signatures",
+        "C) Using secure encryption algorithms",
+        "D) Verifying user identity"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the purpose of decryption in cryptography?",
+      "options": [
+        "A) To hide data from unauthorized parties",
+        "B) To increase security",
+        "C) To enhance readability",
+        "D) To retrieve original data"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Which type of cryptography involves the use of a shared secret key?",
+      "options": [
+        "A) Asymmetric Key Cryptography",
+        "B) Symmetric Key Cryptography",
+        "C) Hashing",
+        "D) Digital Signatures"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the primary goal of authentication in cryptography?",
+      "options": [
+        "A) To verify user identity",
+        "B) To ensure data integrity",
+        "C) To provide confidentiality",
+        "D) To enhance security"
+      ],
+      "answer": "A"
+    }
+  ]
+}
