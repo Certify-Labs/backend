@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-05T16:01:26.604Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "Why is blockchain famous?",
+      "options": [
+        "A) It provides a feature of digitization",
+        "B) It provides a feature of trust",
+        "C) It provides a feature of immutability",
+        "D) All of the above"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Who should get into blockchain?",
+      "options": [
+        "A) Only technical people",
+        "B) Anyone with a business mindset",
+        "C) Both technical and non-technical people",
+        "D) No one is required to have any background"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What are the prerequisites for blockchain?",
+      "options": [
+        "A) Mathematics and programming",
+        "B) Designing and server management",
+        "C) Cryptography and distributed computing",
+        "D) Game theory"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the main purpose of a front-end framework in web development?",
+      "options": [
+        "A) To handle server-side logic",
+        "B) To improve user experience",
+        "C) To optimize website performance",
+        "D) To enhance security"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the best practice for handling errors in JavaScript?",
+      "options": [
+        "A) Using try-catch blocks",
+        "B) Ignoring errors altogether",
+        "C) Logging errors to a file",
+        "D) Throwing exceptions"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "How often should you update your dependencies in a project?",
+      "options": [
+        "A) Only when necessary",
+        "B) Daily",
+        "C) Weekly",
+        "D) Immediately after each commit"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the difference between a GET and POST request?",
+      "options": [
+        "A) GET requests are used for updating data, while POST requests are used for creating new data",
+        "B) GET requests are used for retrieving data, while POST requests are used for sending data",
+        "C) GET requests are used for creating data, while POST requests are used for deleting data",
+        "D) GET requests are used for sending data, while POST requests are used for receiving data"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "How do you ensure the security of a web application?",
+      "options": [
+        "A) Using strong passwords and two-factor authentication",
+        "B) Encrypting sensitive data",
+        "C) Validating user input",
+        "D) All of the above"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the purpose of a CSS reset file?",
+      "options": [
+        "A) To apply global styles to an entire website",
+        "B) To reset default browser styles",
+        "C) To create a consistent layout for all pages",
+        "D) To improve website performance"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "How do you handle conflicts between different browsers in web development?",
+      "options": [
+        "A) By using the latest version of each browser",
+        "B) By testing on multiple browsers simultaneously",
+        "C) By using a single, universal solution",
+        "D) By ignoring browser differences altogether"
+      ],
+      "answer": "C"
+    }
+  ]
+}

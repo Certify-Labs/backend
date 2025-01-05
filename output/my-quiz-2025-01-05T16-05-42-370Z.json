@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-05T16:05:42.370Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "What is the primary purpose of digital signatures?",
+      "options": [
+        "A) To verify the authenticity of a message",
+        "B) To encrypt data for secure transmission",
+        "C) To authenticate the sender of a message",
+        "D) To compress data for faster transmission"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the purpose of input validation in web development?",
+      "options": [
+        "A) To improve the user experience",
+        "B) To prevent SQL injection attacks",
+        "C) To ensure data consistency across all users",
+        "D) To enhance security through encryption"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the importance of secure password storage in web development?",
+      "options": [
+        "A) It is not a critical aspect of web development",
+        "B) It ensures data integrity and consistency",
+        "C) It enhances user experience through faster login times",
+        "D) It prevents unauthorized access to sensitive data"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the purpose of HTTP headers in web development?",
+      "options": [
+        "A) To improve page load times",
+        "B) To enhance user experience through better content delivery",
+        "C) To provide metadata about a request or response",
+        "D) To encrypt data for secure transmission"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the importance of keeping software up-to-date in web development?",
+      "options": [
+        "A) It improves user experience through faster page loads",
+        "B) It enhances security by patching vulnerabilities",
+        "C) It ensures data consistency across all users",
+        "D) It prevents unauthorized access to sensitive data"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the purpose of Content Security Policy (CSP) in web development?",
+      "options": [
+        "A) To improve page load times",
+        "B) To enhance user experience through better content delivery",
+        "C) To define which sources of content are allowed to be executed within a web page",
+        "D) To encrypt data for secure transmission"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the importance of validating user input in web development?",
+      "options": [
+        "A) It improves user experience through faster login times",
+        "B) It enhances security by preventing SQL injection attacks",
+        "C) It ensures data consistency across all users",
+        "D) It prevents unauthorized access to sensitive data"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the purpose of using secure protocols (HTTPS) in web development?",
+      "options": [
+        "A) To improve page load times",
+        "B) To enhance user experience through better content delivery",
+        "C) To encrypt data for secure transmission and protect against eavesdropping",
+        "D) To prevent unauthorized access to sensitive data"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the importance of regularly backing up data in web development?",
+      "options": [
+        "A) It improves user experience through faster page loads",
+        "B) It enhances security by preventing data loss",
+        "C) It ensures data consistency across all users",
+        "D) It prevents unauthorized access to sensitive data"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the purpose of using secure protocols (FTP) in web development?",
+      "options": [
+        "A) To improve page load times",
+        "B) To enhance user experience through better content delivery",
+        "C) To encrypt data for secure transmission and protect against eavesdropping",
+        "D) To prevent unauthorized access to sensitive data"
+      ],
+      "answer": "D"
+    }
+  ]
+}

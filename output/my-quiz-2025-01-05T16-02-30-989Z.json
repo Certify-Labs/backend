@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-05T16:02:30.989Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "What makes blockchains famous?",
+      "options": [
+        "A) It provides features of digitization, trust, and immutability.",
+        "B) Blockchain technology is used in cryptocurrency",
+        "C) Blockchain is a new type of database",
+        "D) Blockchain is a type of smart contract"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Do we need a technical background to get into blockchain?",
+      "options": [
+        "A) Yes, it's necessary for everyone",
+        "B) It's not necessary at all",
+        "C) You need some technical knowledge but you can still start",
+        "D) Blockchain development requires only business skills"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What are the prerequisites for blockchain?",
+      "options": [
+        "A) Cryptography, distributed computing, and game theory",
+        "B) Programming languages, databases, and software engineering",
+        "C) Web development, design, and marketing",
+        "D) Mathematics, statistics, and economics"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the main advantage of using a framework in web development?",
+      "options": [
+        "A) It provides more flexibility and customization options",
+        "B) It speeds up the development process and reduces bugs",
+        "C) It's necessary for building complex applications",
+        "D) It's only used for small projects"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the purpose of a Content Management System (CMS)?",
+      "options": [
+        "A) To build custom web applications from scratch",
+        "B) To create and manage digital content efficiently",
+        "C) To design and develop websites visually",
+        "D) To test and debug code"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the difference between a microservice and a monolithic architecture?",
+      "options": [
+        "A) A monolithic architecture is more scalable and maintainable",
+        "B) A microservice architecture is better for small projects",
+        "C) A monolithic architecture is more flexible and customizable",
+        "D) A microservice architecture is more modular and reusable"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the importance of testing in web development?",
+      "options": [
+        "A) It's only necessary for complex projects",
+        "B) It ensures that the application works as expected",
+        "C) It reduces bugs and errors",
+        "D) It's not a crucial step in the development process"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the purpose of code reviews?",
+      "options": [
+        "A) To test the code manually",
+        "B) To ensure that the code follows best practices and standards",
+        "C) To reduce bugs and errors",
+        "D) To speed up the development process"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the difference between a CSS preprocessor and a CSS framework?",
+      "options": [
+        "A) A CSS preprocessor is better for small projects",
+        "B) A CSS framework provides more features and customization options",
+        "C) A CSS preprocessor is more flexible and customizable",
+        "D) A CSS framework is only used for complex applications"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the importance of security in web development?",
+      "options": [
+        "A) It's not a crucial step in the development process",
+        "B) It ensures that the application is protected from attacks and vulnerabilities",
+        "C) It reduces bugs and errors",
+        "D) It's only necessary for complex projects"
+      ],
+      "answer": "B"
+    }
+  ]
+}

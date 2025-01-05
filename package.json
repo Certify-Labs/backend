@@ -18,6 +18,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.21.2",
+    "firebase": "^11.1.0",
     "ollama-node": "^0.1.28",
     "youtube-transcript": "^1.2.1"
   },
