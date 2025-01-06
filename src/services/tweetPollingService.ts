@@ -2,7 +2,7 @@ import getScraper from "../utils/scraper";
 import * as fs from "fs";
 import * as path from "path";
 
-const POLL_INTERVAL = 6000; // Poll every 60 seconds
+const POLL_INTERVAL = 60000; // Poll every 60 seconds
 const OUTPUT_FILE = path.join(__dirname, "../../data/tweets.json");
 const USERNAME = process.env.TWITTER_USERNAME || ""; // Target username
 

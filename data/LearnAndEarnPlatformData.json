@@ -14,5 +14,53 @@
       "6": "45000000000000000000",
       "7": "45000000000000000000"
     }
+  },
+  {
+    "blockNumber": 28650414,
+    "transactionHash": "0x81459737afe7b3179b5fdaf821b58e951c350adf123f5e17e24f946d0e0de77d",
+    "eventName": "CourseCreated",
+    "eventSignature": "CourseCreated(uint256,address,string,address,string,bool,uint256,uint256)",
+    "args": {
+      "0": "7",
+      "1": "0xC22F53633f34b5D29fb1D4e09b4f281c769f48b9",
+      "2": "Vivek Course",
+      "3": "0xaD47c04BFEaB764cd3c2693b917C50EFE4fDc3e4",
+      "4": "https://www.youtube.com/watch?v=EH6vE97qIP4",
+      "5": false,
+      "6": "0",
+      "7": "50000000000000000000"
+    }
+  },
+  {
+    "blockNumber": 28650414,
+    "transactionHash": "0x81459737afe7b3179b5fdaf821b58e951c350adf123f5e17e24f946d0e0de77d",
+    "eventName": "CourseCreated",
+    "eventSignature": "CourseCreated(uint256,address,string,address,string,bool,uint256,uint256)",
+    "args": {
+      "0": "7",
+      "1": "0xC22F53633f34b5D29fb1D4e09b4f281c769f48b9",
+      "2": "Vivek Course",
+      "3": "0xaD47c04BFEaB764cd3c2693b917C50EFE4fDc3e4",
+      "4": "https://www.youtube.com/watch?v=EH6vE97qIP4",
+      "5": false,
+      "6": "0",
+      "7": "50000000000000000000"
+    }
+  },
+  {
+    "blockNumber": 28650414,
+    "transactionHash": "0x81459737afe7b3179b5fdaf821b58e951c350adf123f5e17e24f946d0e0de77d",
+    "eventName": "CourseCreated",
+    "eventSignature": "CourseCreated(uint256,address,string,address,string,bool,uint256,uint256)",
+    "args": {
+      "0": "7",
+      "1": "0xC22F53633f34b5D29fb1D4e09b4f281c769f48b9",
+      "2": "Vivek Course",
+      "3": "0xaD47c04BFEaB764cd3c2693b917C50EFE4fDc3e4",
+      "4": "https://www.youtube.com/watch?v=EH6vE97qIP4",
+      "5": false,
+      "6": "0",
+      "7": "50000000000000000000"
+    }
   }
 ]

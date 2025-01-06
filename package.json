@@ -19,6 +19,7 @@
     "dotenv": "^16.0.3",
     "ethers": "^6.13.5",
     "express": "^4.21.2",
+    "fhevmjs": "^0.5.7",
     "ollama-node": "^0.1.28",
     "youtube-transcript": "^1.2.1"
   },

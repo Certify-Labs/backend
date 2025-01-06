@@ -5,6 +5,7 @@ import tweetsRoutes from "./routes/tweets";
 import transcriptRouter from "./routes/transcripts";
 import questionRouter from "./routes/questions";
 import erc1155Router from "./routes/erc1155Events";
+import encryptRouter from "./routes/encryptData"; // Import the new encrypt route
 import { startPolling as startERC1155Polling } from "./services/LearnAndEarnPlatformPollingService";
 import { startTweetPolling } from "./services/tweetPollingService";
 
@@ -21,11 +22,12 @@ app.use("/api", tweetsRoutes);
 app.use("/api/transcripts", transcriptRouter);
 app.use("/api/questions", questionRouter);
 app.use("/api/erc1155", erc1155Router);
+app.use("/api/encrypt", encryptRouter); // Register the new encrypt route
 
 // Start ERC1155 event polling
-startERC1155Polling();
+// startERC1155Polling();
 
-// Start tweet polling
+// Uncomment to start tweet polling if needed
 // startTweetPolling();
 
 const PORT = process.env.PORT || 3000;
