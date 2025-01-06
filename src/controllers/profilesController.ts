@@ -8,7 +8,7 @@ export const getProfile = async (req: Request, res: Response) => {
     if (!username) {
       return res.status(400).json({ success: false, error: 'Username is required' });
     }
-
+    // @ts-ignore 
     const profile = await scraper.getProfile(username);
     handleResponse(res, profile, 'Fetched profile successfully');
   } catch (error) {
