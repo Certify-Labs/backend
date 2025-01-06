@@ -1,0 +1,18 @@
+[
+  {
+    "blockNumber": 28619769,
+    "transactionHash": "0xbe8dff67626d353bd14a0b68db3035ea429df1efe4175d8576c94e47991b170d",
+    "eventName": "CourseCreated",
+    "eventSignature": "CourseCreated(uint256,address,string,address,string,bool,uint256,uint256)",
+    "args": {
+      "0": "5",
+      "1": "0xC22F53633f34b5D29fb1D4e09b4f281c769f48b9",
+      "2": "Vivek SH",
+      "3": "0x2a70646e3216d4618365FC99112a943a96268aAb",
+      "4": "JKSDBGJIOUGERsvb",
+      "5": true,
+      "6": "45000000000000000000",
+      "7": "45000000000000000000"
+    }
+  }
+]
