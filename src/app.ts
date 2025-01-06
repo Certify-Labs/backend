@@ -1,6 +1,5 @@
 import express from "express";
 import dotenv from "dotenv";
-import cors from "cors";
 import tweetsRoutes from "./routes/tweets";
 import transcriptRouter from "./routes/transcripts";
 import questionRouter from "./routes/questions";
@@ -8,6 +7,9 @@ import erc1155Router from "./routes/erc1155Events";
 import encryptRouter from "./routes/encryptData"; // Import the new encrypt route
 import { startPolling as startERC1155Polling } from "./services/LearnAndEarnPlatformPollingService";
 import { startTweetPolling } from "./services/tweetPollingService";
+import courseRouter from "./routes/courses";
+import cors from "cors";
+
 
 dotenv.config();
 
@@ -29,6 +31,7 @@ app.use("/api/encrypt", encryptRouter); // Register the new encrypt route
 
 // Uncomment to start tweet polling if needed
 // startTweetPolling();
+app.use("/api", courseRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

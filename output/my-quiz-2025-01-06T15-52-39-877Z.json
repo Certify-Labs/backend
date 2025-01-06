@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-06T15:52:39.877Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "What is the primary use of GitHub for a Flutter course?",
+      "options": [
+        "A) To host personal projects",
+        "B) To share and collaborate on code",
+        "C) To manage dependencies and versions",
+        "D) Additional option 4"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Which interface is used to install Flutter?",
+      "options": [
+        "A) Graphical User Interface (GUI)",
+        "B) Command Line Interface (CLI)",
+        "C) Web Interface (WI)",
+        "D) Additional option 4"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the purpose of running a diagnostic test after installing Flutter?",
+      "options": [
+        "A) To verify the installation",
+        "B) To test the code",
+        "C) To debug the program",
+        "D) Additional option 4"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Why might you need to edit system environment variables if Flutter is not installed correctly?",
+      "options": [
+        "A) To increase performance",
+        "B) To improve security",
+        "C) To fix installation issues",
+        "D) Additional option 4"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the primary benefit of accessing and cloning course files for a tutorial?",
+      "options": [
+        "A) To learn from others' code",
+        "B) To practice coding skills",
+        "C) To get hands-on experience with Flutter",
+        "D) Additional option 4"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Which best practice is to keep your code organized and up-to-date?",
+      "options": [
+        "A) Using a version control system (VCS)",
+        "B) Additional option 2",
+        "C) Additional option 3",
+        "D) Additional option 4"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the purpose of writing unit tests in web development?",
+      "options": [
+        "A) To test individual components",
+        "B) To test the entire application",
+        "C) Additional option 3",
+        "D) Additional option 4"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Why is it important to use a consistent coding style?",
+      "options": [
+        "A) To improve performance",
+        "B) To reduce errors",
+        "C) To make code more readable and maintainable",
+        "D) Additional option 4"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the primary benefit of using a Content Delivery Network (CDN)?",
+      "options": [
+        "A) To increase website speed",
+        "B) To improve security",
+        "C) To reduce costs",
+        "D) Additional option 4"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Why is it important to use secure protocols when transmitting data over the web?",
+      "options": [
+        "A) To protect sensitive information",
+        "B) To prevent hacking attempts",
+        "C) To ensure data integrity",
+        "D) Additional option 4"
+      ],
+      "answer": "B"
+    }
+  ]
+}

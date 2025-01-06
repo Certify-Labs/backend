@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-05T19:25:04.797Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "What is the main reason why blockchain is famous?",
+      "options": [
+        "A) Option 1",
+        "B) It provides you a feature of trust",
+        "C) Option 3",
+        "D) Immutability"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Do we need a technical background to get into blockchain?",
+      "options": [
+        "A) Yes, we need technical people who can work on blockchain",
+        "B) No, we don't need technical knowledge",
+        "C) Maybe, it depends on what you know",
+        "D) Option 4"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What are the prerequisites for blockchain?",
+      "options": [
+        "A) Cryptography and distributed computing",
+        "B) Programming and machine learning",
+        "C) Business and marketing",
+        "D) Option 4"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the purpose of a consistent naming convention in web development?",
+      "options": [
+        "A) To make code look more appealing",
+        "B) To improve readability and maintainability",
+        "C) To reduce errors and bugs",
+        "D) To increase performance"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the best practice for handling errors in web development?",
+      "options": [
+        "A) By ignoring them",
+        "B) By logging them and displaying a generic error message",
+        "C) By displaying a user-friendly error message",
+        "D) By throwing an exception"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the importance of code reviews in web development?",
+      "options": [
+        "A) They can improve coding skills quickly",
+        "B) They can reduce errors and bugs",
+        "C) They can increase productivity",
+        "D) They can improve team collaboration"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the purpose of a Content Security Policy (CSP) in web development?",
+      "options": [
+        "A) To improve page load times",
+        "B) To reduce errors and bugs",
+        "C) To prevent cross-site scripting attacks",
+        "D) To increase user engagement"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the best practice for handling sensitive data in web development?",
+      "options": [
+        "A) By storing it in plain text",
+        "B) By encrypting it and storing the key securely",
+        "C) By hashing it and storing the hash value",
+        "D) By using a password manager"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the importance of testing in web development?",
+      "options": [
+        "A) It can improve coding skills quickly",
+        "B) It can reduce errors and bugs",
+        "C) It can increase productivity",
+        "D) It can ensure the website works as expected"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the purpose of a security audit in web development?",
+      "options": [
+        "A) To improve coding skills quickly",
+        "B) To identify vulnerabilities and weaknesses",
+        "C) To increase productivity",
+        "D) To reduce errors and bugs"
+      ],
+      "answer": "B"
+    }
+  ]
+}

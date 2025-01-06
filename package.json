@@ -20,6 +20,7 @@
     "ethers": "^6.13.5",
     "express": "^4.21.2",
     "fhevmjs": "^0.5.7",
+    "firebase": "^11.1.0",
     "ollama-node": "^0.1.28",
     "youtube-transcript": "^1.2.1"
   },
