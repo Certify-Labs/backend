@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated": "2025-01-06T15:51:25.978Z",
+    "model": "llama3.2",
+    "questionCount": 10
+  },
+  "questions": [
+    {
+      "question": "What type of network does the blockchain work on?",
+      "options": [
+        "A) Public Network",
+        "B) Private Network",
+        "C) Hybrid Network",
+        "D) Decentralized Network"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the purpose of a Content Delivery Network (CDN)?",
+      "options": [
+        "A) To improve website security",
+        "B) To reduce latency and increase speed",
+        "C) To enhance user experience",
+        "D) To optimize server performance"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the difference between HTTP and HTTPS?",
+      "options": [
+        "A) HTTP uses encryption, HTTPS does not",
+        "B) HTTPS uses encryption, HTTP does not",
+        "C) Both use encryption",
+        "D) Neither uses encryption"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is a good practice for error handling in web development?",
+      "options": [
+        "A) Raising exceptions and letting the server crash",
+        "B) Returning an error message to the client",
+        "C) Logging errors and continuing execution",
+        "D) Ignoring errors and continuing execution"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the importance of input validation in web development?",
+      "options": [
+        "A) Improving website security",
+        "B) Reducing server load",
+        "C) Enhancing user experience",
+        "D) Increasing website speed"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is a good practice for password storage?",
+      "options": [
+        "A) Storing passwords in plain text",
+        "B) Using weak hashing algorithms",
+        "C) Using weak salting techniques",
+        "D) Using strong hashing and salting"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the difference between a GET and POST request?",
+      "options": [
+        "A) GET requests are used for form submissions, POST requests are not",
+        "B) POST requests are used for form submissions, GET requests are not",
+        "C) Both GET and POST requests can be used for form submissions",
+        "D) Neither GET nor POST requests can be used for form submissions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is a good practice for caching in web development?",
+      "options": [
+        "A) Caching all data, regardless of relevance",
+        "B) Caching frequently accessed data only",
+        "C) Ignoring caching altogether",
+        "D) Using caching to improve server performance"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the importance of keeping software up-to-date?",
+      "options": [
+        "A) Improving website security",
+        "B) Reducing server load",
+        "C) Enhancing user experience",
+        "D) Increasing website speed"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is a good practice for debugging in web development?",
+      "options": [
+        "A) Ignoring errors and continuing execution",
+        "B) Logging errors but not fixing them",
+        "C) Fixing errors as soon as possible",
+        "D) Using debugging tools to identify issues"
+      ],
+      "answer": "D"
+    }
+  ]
+}

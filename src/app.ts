@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import tweetsRoutes from "./routes/tweets";
 import transcriptRouter from "./routes/transcripts";
 import questionRouter from "./routes/questions";
+import courseRouter from "./routes/courses";
 import cors from "cors";
 
 dotenv.config();
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use("/api", tweetsRoutes);
 app.use("/api/transcripts", transcriptRouter);
 app.use("/api/questions", questionRouter);
+app.use("/api", courseRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

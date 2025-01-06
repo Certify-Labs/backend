@@ -9,6 +9,7 @@ import {
   Timestamp,
   doc,
   getDoc,
+  setDoc,
 } from "firebase/firestore";
 
 export interface QuestionSet {
@@ -36,6 +37,12 @@ export interface Course {
   purchasedBy: string[];
   createdAt: Timestamp;
   updatedAt: Timestamp;
+  description?: string;
+  price?: number;
+  videos?: string[];
+  numberOfStudents?: number;
+  ownerAddress?: string;
+  ownerEduname?: string;
 }
 
 export class FirebaseService {
@@ -123,4 +130,105 @@ export class FirebaseService {
       throw error;
     }
   }
+
+  async saveCourse(courseId: string, courseData: any): Promise<string> {
+    try {
+      if (!courseId || typeof courseId !== "string") {
+        throw new Error("Invalid courseId: must be a non-empty string");
+      }
+      const courseDoc = {
+        id: courseId,
+        name: courseData.name || "",
+        title: courseData.name || "",
+        description: courseData.description || "",
+        metadataURI: courseData.metadataURI || "",
+        isPremium: courseData.isPremium || false,
+        minPurchaseAmount: courseData.minPurchaseAmount,
+        certificatePrice: courseData.certificatePrice,
+        basePrice: courseData.basePrice,
+        scalingFactor: courseData.scalingFactor,
+        price: courseData.basePrice || 0,
+        videos: courseData.videoLinks || [],
+        category: courseData.category || "",
+        rating: 0,
+        numberOfStudents: 0,
+        purchasedBy: [],
+        ownerAddress: courseData.ownerAddress || "",
+        ownerEduname: courseData.ownerEduname || "",
+        xProfileLink: courseData.xProfileLink || "",
+        createdAt: Timestamp.now(),
+        updatedAt: Timestamp.now(),
+        colorScheme: {
+          darker: "#000000",
+          lighter: "#ffffff",
+        },
+        students: 0,
+        progress: 0,
+        link: "",
+        icon: "",
+      };
+
+      const docRef = doc(this.db, "courses", courseId.toString().trim());
+      await setDoc(docRef, courseDoc);
+      return courseId;
+    } catch (error) {
+      console.error("Error saving course:", error);
+      throw error;
+    }
+  }
+
+  // async saveCourse(courseId: string, courseData: any): Promise<string> {
+  //   try {
+  //     const docRef = doc(this.db, "courses", courseId.toString());
+  //     const courseDoc = {
+  //       id: courseId,
+  //       title: courseData.name,
+  //       description: courseData.description,
+  //       price: courseData.basePrice,
+  //       videos: courseData.videoLinks,
+  //       category: courseData.category,
+  //       rating: 0,
+  //       numberOfStudents: 0,
+  //       purchasedBy: [],
+  //       ownerAddress: courseData.ownerAddress,
+  //       ownerEduname: courseData.ownerEduname,
+  //       createdAt: Timestamp.now(),
+  //     };
+
+  //     await setDoc(docRef, courseDoc);
+  //     return courseId;
+  //   } catch (error) {
+  //     console.error("Error saving course:", error);
+  //     throw error;
+  //   }
+  // }
+
+  async getCourseById(courseId: string): Promise<Course> {
+    try {
+      const docRef = doc(this.db, "courses", courseId);
+      const docSnap = await getDoc(docRef);
+
+      if (!docSnap.exists()) {
+        throw new Error("Course not found");
+      }
+      return docSnap.data() as Course;
+    } catch (error) {
+      console.error("Error getting course:", error);
+      throw error;
+    }
+  }
+
+  async getCoursesByOwner(ownerAddress: string): Promise<Course[]> {
+    try {
+      const coursesRef = collection(this.db, "courses");
+      const q = query(coursesRef, where("ownerAddress", "==", ownerAddress));
+      const querySnapshot = await getDocs(q);
+      return querySnapshot.docs.map((doc) => doc.data() as Course);
+    } catch (error) {
+      console.error("Error getting courses:", error);
+      throw error;
+    }
+  }
 }
+
+export default FirebaseService;
