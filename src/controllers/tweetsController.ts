@@ -41,14 +41,14 @@ export const getLatestTweet = async (req: Request, res: Response) => {
 
 export const sendTweet = async (req: Request, res: Response) => {
   try {
-    const { text, replyToTweetId } = req.body;
+    const { text } = req.body;
 
     if (!text) {
       return res.status(400).json({ success: false, error: 'Tweet text is required' });
     }
 
     const scraper = await getScraper();
-    const result = await scraper.sendTweet(text, replyToTweetId);
+    const result = await scraper.sendTweet(text);
 
     handleResponse(res, result, 'Tweet sent successfully');
   } catch (error) {

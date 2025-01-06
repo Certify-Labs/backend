@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { handleResponse, handleError } from "../utils/responseHandler";
 import crypto from "crypto";
-import { encryptAndStore } from "../utils/StoreKeyOnZama";
+import { encryptAndStore } from "../utils/StoreKeyOnInco";
 
 // Encrypt data API
 export const encryptDataAPI = async (req: Request, res: Response) => {

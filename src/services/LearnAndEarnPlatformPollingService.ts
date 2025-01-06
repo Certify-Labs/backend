@@ -4,6 +4,7 @@ import * as path from "path";
 import dotenv from "dotenv";
 import { LearnAndEarnPlatformAbi } from "../helpers/LearnAndEarnPlatformAbi";
 dotenv.config();
+import { tweetCourseCreated } from "../helpers/TweetAboutCourse";
 
 // Constants
 const RPC_URL = process.env.RPC_URL || "";
@@ -31,7 +32,29 @@ const ensureDataDirectoryExists = () => {
   }
 };
 
-// Fetch all events and save to file
+/**
+ * Function to handle CourseCreated event.
+ */
+const handleCourseCreated = (
+  courseId: string,
+  publisher: string,
+  name: string,
+  vault: string,
+  metadataURI: string,
+  isPremium: boolean,
+  minPurchaseAmount: string,
+  certificatePrice: string
+) => {
+  console.log("Handling CourseCreated event...");
+  // Call the tweet function
+  tweetCourseCreated( 
+    metadataURI,
+  );
+};
+
+/**
+ * Fetch all events and save to file.
+ */
 const fetchAllEvents = async () => {
   try {
     const currentBlock = await provider.getBlockNumber();
@@ -53,6 +76,21 @@ const fetchAllEvents = async () => {
     const events = logs.map((log) => {
       try {
         const parsedLog: any = contract.interface.parseLog(log);
+
+        // Check if the event is CourseCreated
+        if (parsedLog.name === "CourseCreated") {
+          handleCourseCreated(
+            parsedLog.args.courseId.toString(),
+            parsedLog.args.publisher,
+            parsedLog.args.name,
+            parsedLog.args.vault,
+            parsedLog.args.metadataURI,
+            parsedLog.args.isPremium,
+            parsedLog.args.minPurchaseAmount.toString(),
+            parsedLog.args.certificatePrice.toString()
+          );
+        }
+
         return {
           blockNumber: log.blockNumber,
           transactionHash: log.transactionHash,
@@ -95,6 +133,6 @@ const fetchAllEvents = async () => {
 
 // Start periodic polling
 export const startPolling = () => {
-  console.log("Starting ERC1155 event polling...");
+  console.log("Starting event polling...");
   setInterval(fetchAllEvents, 10000);
 };

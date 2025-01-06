@@ -10,7 +10,6 @@ import { startTweetPolling } from "./services/tweetPollingService";
 import courseRouter from "./routes/courses";
 import cors from "cors";
 
-
 dotenv.config();
 
 const app = express();
@@ -27,7 +26,7 @@ app.use("/api/erc1155", erc1155Router);
 app.use("/api/encrypt", encryptRouter); // Register the new encrypt route
 
 // Start ERC1155 event polling
-// startERC1155Polling();
+startERC1155Polling();
 
 // Uncomment to start tweet polling if needed
 // startTweetPolling();
